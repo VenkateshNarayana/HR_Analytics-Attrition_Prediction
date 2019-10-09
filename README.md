@@ -102,9 +102,13 @@ This in my opinion seems to be the best model to choose as there is an optimal t
 ##### Future Considerationa
 
 -The TPOT should be used to create or measure baselines.
+
 -One of the best practice identified is that models give the optimal results when data is prepared using label encoder for nominal data and using backward difference encoder for ordinal.
+
 -An exhaustive list of algorithms should be tried , here we only covered ExtraTreeClassifier, GradientBoostClassifier and AdaBoostClassifier apart from the basic ones (Logistic, DecisionTree, RandomForrest, KNN , BernouliNB and GaussianNB).
+
 -Choose F1 score over recall wherever we need both precision and recall to be optimal
+
 -The logistic regression model should be closely monitored after being implemented and new information to be captured with the employees leaving the company. And this has to be used to retrain the model and see if there is any better model that emerges from the new information obtained.
 
 

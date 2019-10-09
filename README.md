@@ -1,6 +1,6 @@
 # HR-Analytics - Attrition Prediction
 <p align="center">
-  <img width="460" height="300" src="images/HRAnalytics.jpg">
+  <img width="460" height="300" src="HR-EmployeeAtrrition/images/HRAnalytics.jpg">
 </p>
 
 

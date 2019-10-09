@@ -52,17 +52,23 @@ Below is a table showing names of all the columns and their description.
 ## PROJECT ANALYSIS
 | Description | Analysis |
 | --- | --- |
-| Red wine  | ![image.png](images/redwinedataset.png) |
-| White wine | ![image.png](images/whitewinedataset.png) |
+| Distribution of Attrition  | ![image.png](HR-EmployeeAtrrition/images/Attrition_PieChart.png) |
+| Heatmap showing Correlation | ![image.png](HR-EmployeeAtrrition/images/Corr_Heatmap.png) |
 
 
 ### CONCLUSION
 
 |     | Models Analysed |
 | --- | ---             |
-| Model Results                  | ![image.jpg](images/Models.jpg) |
-| Model-Cross Validation Results | ![image.jpg](images/CrossValidationResults.png) |
-| Model-Grid Search Results      | ![image.jpg](images/GridSearchResults.png) |
+| Approach 1 - UnderSampling                          | ![image.jpg](HR-EmployeeAtrrition/images/UnderSampling_Models_Results.jpg) |
+| Approach 1 - Smote                                  | ![image.jpg](HR-EmployeeAtrrition/images/Smote_Models_Results.png) |
+| Approach 2 - Dropping Columns with Constant Data    | ![image.jpg](HR-EmployeeAtrrition/images/DropConst_Models_Results.png) |
+| Approach 3 - Dropping Columns having no correlation | ![image.jpg](HR-EmployeeAtrrition/images/NoRelation_Models_Results.png) |
+| Approach 4 - PCA                                    | ![image.jpg](HR-EmployeeAtrrition/images/PCA_Models_Results.png) |
+| Approach 5 - Using correlation columns              | ![image.jpg](HR-EmployeeAtrrition/images/NoRelation_Models_Results.png) |
+| Approach 6 - Using correlation-labelencoder/backward| ![image.jpg](HR-EmployeeAtrrition/images/CorrData_LE_BDE_Models_Results.png) |
+| Approach 7 - SVC                                    | ![image.jpg](HR-EmployeeAtrrition/images/SVC_Models_Results.png) |
+| Approach 7 - TPOT                                   | ![image.jpg](HR-EmployeeAtrrition/images/TPOT_Models_Results.png) |
 
 #### Observation
 ##### Based on the data available we try the following approaches to see if the model built on these gives a good accuracy.

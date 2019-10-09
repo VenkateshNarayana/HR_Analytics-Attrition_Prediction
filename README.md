@@ -60,7 +60,7 @@ Below is a table showing names of all the columns and their description.
 
 |     | Models Analysed |
 | --- | ---             |
-| Approach 1 - UnderSampling                          | ![image.jpg](HR-EmployeeAtrrition/images/UnderSampling_Models_Results.jpg) |
+| Approach 1 - UnderSampling                          | ![image.jpg](HR-EmployeeAtrrition/images/UnderSampling_Models_Results.png) |
 | Approach 1 - Smote                                  | ![image.jpg](HR-EmployeeAtrrition/images/Smote_Models_Results.png) |
 | Approach 2 - Dropping Columns with Constant Data    | ![image.jpg](HR-EmployeeAtrrition/images/DropConst_Models_Results.png) |
 | Approach 3 - Dropping Columns having no correlation | ![image.jpg](HR-EmployeeAtrrition/images/NoRelation_Models_Results.png) |
@@ -72,17 +72,22 @@ Below is a table showing names of all the columns and their description.
 
 #### Observation
 ##### Based on the data available we try the following approaches to see if the model built on these gives a good accuracy.
-- Check a Model which doesnt includes type information, keep the outliers, doesnt scale data nor add any weights (due to imbalance data) and see if the KNN, Logistic Regression or Decision Tree provide good accuracy.
-- Check if we add weights but ignore type, keep outliers and use unscaled data.
-- Check if accuracy improves if we add type, remove outliers, scale data and add weights for predicting the quality 
+- Check a Model by using SMOTE/UnderSampling techniques to create a new dataset due to imbalanced data of attrition.
+- Check a Model by using feature engineering(dropping columns with constant data or std dev=0).
+- Check a Model by using feature engineering(dropping columns having no correlation).
+- Check a Model by using columns which has only correlated data with attrition. Check also using Label encoder for nominal and Backward Difference Encoding for ordinal.
+- Check a Model by using PCA.
+- Check a Model by using SVC.
+- Check a Model by using TPOT.
 
-The best model that was found for achieving the best recall score were GaussianNB and BernoulliNB which gave the recall scores of 82% and 57% respectively. However, there are couple of things to note before opting for this model. 
+The best model that was found for achieving the best recall score were GaussianNB and BernoulliNB which gave the recall scores of 82% and 57% respectively. However, there are few things to note before making a final selection of the model. 
 
 ![image.jpg](HR-EmployeeAtrrition/images/GaussianNB_Results.png)
 
 -Though the recall score is 82% for GaussianNB but the precision is pretty low 24%. This means the model though is able to identify 82% of the attrition cases accurately but it is also misclassifying 76% of non attrition cases as attrition. And, if we were to implement this model then it would involve a lot of work to the HR team to implement its mitigation policy or retention policy as this would mean potentially running through more than half the population to try and convince them to stay. This would also incur additional costs which might be unnecessary.
 ![image.jpg](HR-EmployeeAtrrition/images/BernoulliNB_Results.png)
 -The BernolliNB on the other had a recall of 59% but better precision 42%. But this also has the same problem where a there were misclassification of 58% and unable to identify 41% of probable employees. This means HR team will loose 40% of the employees even after counselling and implementing retention on more than 20-25% or their employees(slightly less overhead to HR team but company would still loose 40%)
+
 ![image.jpg](HR-EmployeeAtrrition/images/LogisticRegression_Results.png)
 - Let us also see the Logistic Regression which gave an recall score of 55% with 75% precision. This means the HR team would have to invest time and resources on counselling 10-15% of its population and would be still able to save 55% of its employees from quitting. 
 This in my opinion seems to be the best model to choose as there is an optimal trade off between the administrative cost and employees saved. However, if the company is more aggressive on saving its employees it can switch to GaussianNB.
@@ -93,8 +98,6 @@ This in my opinion seems to be the best model to choose as there is an optimal t
 -HR teams will be able to save 55% of its employees from the risk of attrition, which is on par with BernoulliNB (59%) but has a better precision.
 
 -HR teams time and resources spent on only 10-15% as against using GaussianNB which though has 85% correct identification but the HR team has to spend time and resources on more than half the population (55%) in order to achieve that.
-
-
 
 ##### Future Considerationa
 

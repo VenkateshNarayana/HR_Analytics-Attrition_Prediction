@@ -57,7 +57,7 @@ Below is a table showing names of all the columns and their description.
 | Salary Data Relation with Attrition | ![image.png](HR-EmployeeAtrrition/images/SalaryRelation_Attrition.png) |
 
 
-### CONCLUSION
+### SUMMARY
 
 |     | Models Analysed |
 | --- | ---             |
@@ -93,14 +93,14 @@ The best model that was found for achieving the best recall score were GaussianN
 - Let us also see the Logistic Regression which gave an recall score of 55% with 75% precision. This means the HR team would have to invest time and resources on counselling 10-15% of its population and would be still able to save 55% of its employees from quitting. 
 This in my opinion seems to be the best model to choose as there is an optimal trade off between the administrative cost and employees saved. However, if the company is more aggressive on saving its employees it can switch to GaussianNB.
 
-
+### CONCLUSION
 ##### After analysing the 3 models the recommendation would be to choose Logistic Regression which gives a recall of 55% with 75% precision.
 
 -HR teams will be able to save 55% of its employees from the risk of attrition, which is on par with BernoulliNB (59%) but has a better precision.
 
 -HR teams time and resources spent on only 10-15% as against using GaussianNB which though has 85% correct identification but the HR team has to spend time and resources on more than half the population (55%) in order to achieve that.
 
-##### Future Considerationa
+##### Future Considerations
 
 -The TPOT should be used to create or measure baselines.
 

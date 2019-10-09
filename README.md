@@ -52,8 +52,9 @@ Below is a table showing names of all the columns and their description.
 ## PROJECT ANALYSIS
 | Description | Analysis |
 | --- | --- |
-| Distribution of Attrition  | ![image.png](HR-EmployeeAtrrition/images/Attrition_PieChart.png) |
-| Heatmap showing Correlation | ![image.png](HR-EmployeeAtrrition/images/Corr_Heatmap.png) |
+| Distribution of Attrition           | ![image.png](HR-EmployeeAtrrition/images/Attrition_PieChart.png) |
+| Heatmap showing Correlation         | ![image.png](HR-EmployeeAtrrition/images/Corr_Heatmap.png)       |
+| Salary Data Relation with Attrition | ![image.png](HR-EmployeeAtrrition/images/SalaryRelation_Attrition.png) |
 
 
 ### CONCLUSION

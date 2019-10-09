@@ -83,7 +83,7 @@ The best model that was found for achieving the best recall score were GaussianN
 -Though the recall score is 82% for GaussianNB but the precision is pretty low 24%. This means the model though is able to identify 82% of the attrition cases accurately but it is also misclassifying 76% of non attrition cases as attrition. And, if we were to implement this model then it would involve a lot of work to the HR team to implement its mitigation policy or retention policy as this would mean potentially running through more than half the population to try and convince them to stay. This would also incur additional costs which might be unnecessary.
 ![image.jpg](HR-EmployeeAtrrition/images/BernoulliNB_Results.png)
 -The BernolliNB on the other had a recall of 59% but better precision 42%. But this also has the same problem where a there were misclassification of 58% and unable to identify 41% of probable employees. This means HR team will loose 40% of the employees even after counselling and implementing retention on more than 20-25% or their employees(slightly less overhead to HR team but company would still loose 40%)
-![image.jpg](HR-EmployeeAtrrition/images/TPOT_Models_Results.png)
+![image.jpg](HR-EmployeeAtrrition/images/LogisticRegression_Results.png)
 - Let us also see the Logistic Regression which gave an recall score of 55% with 75% precision. This means the HR team would have to invest time and resources on counselling 10-15% of its population and would be still able to save 55% of its employees from quitting. 
 This in my opinion seems to be the best model to choose as there is an optimal trade off between the administrative cost and employees saved. However, if the company is more aggressive on saving its employees it can switch to GaussianNB.
 
